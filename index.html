@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Harshu</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+text-align:center;
+font-family:Arial, sans-serif;
+background: linear-gradient(45deg,#ff9ad5,#ffd6ec,#ffeaa7,#ffb3c6);
+background-size:400% 400%;
+animation:bg 8s ease infinite;
+color:white;
+overflow:hidden;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+h1{
+margin-top:80px;
+font-size:36px;
+text-shadow:2px 2px 10px #ff1493;
+}
+
+p{
+font-size:20px;
+margin:10px 20px;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff1493;
+cursor:pointer;
+box-shadow:0 0 15px pink;
+}
+
+button:hover{
+background:#ff1493;
+color:white;
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:24px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-800px);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎂 Happiest Birthday My Cute Harshu Momoo 💕</h1>
+
+<p>You are my heart, my happiness, and my forever home 🏠✨</p>
+<p>If love had a face, it would look like you 😍💖</p>
+<p>The world shines brighter because of you 🌍💫</p>
+<p>I love you more than words can ever say ❤️🔥</p>
+
+<button onclick="startSurprise()">Click For Surprise 🎁</button>
+
+<audio id="bdayMusic" loop>
+<source src="https://www2.cs.uic.edu/~i101/SoundFiles/HappyBirthday.mid" type="audio/midi">
+</audio>
+
+<div id="surpriseBox" style="
+display:none;
+margin-top:30px;
+font-size:22px;
+background:rgba(255,255,255,0.2);
+padding:20px;
+border-radius:20px;
+backdrop-filter:blur(5px);
+animation:fadeIn 1s forwards;">
+💖 Harshu Momoo 💖<br><br>
+You are my greatest blessing 🌹<br>
+My forever happiness ✨<br><br>
+Happiest Birthday My Queen 👑🎂<br>
+I love you endlessly ❤️🔥<br>
+— Sameer 💌
+</div>
+
+<script>
+function startSurprise(){
+document.getElementById("surpriseBox").style.display = "block";
+var music = document.getElementById("bdayMusic");
+music.play();
+}
+</script>
+
+</body>
+</html>
